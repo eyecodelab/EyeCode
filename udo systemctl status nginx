@@ -1,0 +1,18 @@
+[0;1;32m●[0m apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Thu 2024-08-08 18:09:24 +08; 10min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 73487 (apache2)
+      Tasks: 6 (limit: 38011)
+     Memory: 10.3M
+     CGroup: /system.slice/apache2.service
+             ├─73487 /usr/sbin/apache2 -k start
+             ├─73490 /usr/sbin/apache2 -k start
+             ├─73491 /usr/sbin/apache2 -k start
+             ├─73492 /usr/sbin/apache2 -k start
+             ├─73493 /usr/sbin/apache2 -k start
+             └─73494 /usr/sbin/apache2 -k start
+
+Aug 08 18:09:24 eyecode-alienware systemd[1]: Starting The Apache HTTP Server...
+Aug 08 18:09:24 eyecode-alienware apachectl[73486]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.0.2. Set the 'ServerName' directive globally to suppress this message
+Aug 08 18:09:24 eyecode-alienware systemd[1]: Started The Apache HTTP Server.
