@@ -35,7 +35,7 @@
     }
 
     // Prepare email body
-    $body = "<ul><li>Name: ".$name."</li><li>Phonee: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
+    $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
 
     // Send email
     $status = mailfunction("eyecodelab@gmail.com", "EyeCode", $body); // receiver
