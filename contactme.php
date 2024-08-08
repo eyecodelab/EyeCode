@@ -23,7 +23,7 @@
 
     // Get POST data
     $name = $_POST["name"];
-    // $phone = $_POST['phone'];
+    $phone = $_POST['phone'];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
@@ -35,8 +35,7 @@
     }
 
     // Prepare email body
-    // $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
-    $body = "<ul><li>Namee: ".$name."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
+    $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
 
     // Send email
     $status = mailfunction("eyecodelab@gmail.com", "EyeCode", $body); // receiver
